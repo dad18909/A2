@@ -7,10 +7,18 @@
 </head>
 <body>
     <h1>Enjoy the Amazing Wildlife Video</h1>
-    <video controls>
-        <!-- 这里是你的 blob URL 视频源 -->
-        <source type="video/mp4" src="blob:https://x.com/05d49b47-419f-4abc-a137-fa852d4ee9f0"></source>
-        Your browser does not support the video tag.
-    </video>
+    
+    <!-- 嵌入视频播放器 -->
+    <div class="video-container">
+        <video controls preload="none" style="width: 100%; max-width: 800px; background-color: black;">
+            <source src="blob:https://x.com/05d49b47-419f-4abc-a137-fa852d4ee9f0" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <p>If you want to visit the video source or related content, you can click the link below:</p>
+    
+    <!-- 点击跳转到外部页面 -->
+    <a href="https://bungqua333.live/testvideos" target="_blank" rel="noopener noreferrer">Visit Video Source</a>
 </body>
 </html>
